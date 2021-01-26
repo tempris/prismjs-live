@@ -193,6 +193,7 @@ var _ = Prism.Live = class PrismLive {
 
 			this.pre.style.height = this.source.style.height || sourceCS.getPropertyValue("--height");
 			this.pre.style.maxHeight = this.source.style.maxHeight || sourceCS.getPropertyValue("--max-height");
+			this.textarea.spellcheck = this.source.spellcheck || sourceCS.getPropertyValue("--spellcheck");
 		});
 
 		this.update();
@@ -366,7 +367,7 @@ var _ = Prism.Live = class PrismLive {
 				this.textarea.style[prop] = this.pre.style[prop] = "inherit";
 			}
 		}
-	
+
 		// This is primarily for supporting the line-numbers plugin.
 		this.textarea.style['padding-left'] = cs['padding-left'];
 
