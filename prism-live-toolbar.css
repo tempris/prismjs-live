@@ -1,0 +1,9 @@
+/* Add support for prism toolbar. */
+
+div.prism-live:hover .toolbar {
+  opacity: 1;
+}
+
+div.prism-live .toolbar {
+  z-index: 2;
+}
